@@ -1,13 +1,4 @@
-<!-- <h1> Create User </h1>
-<%= form_tag('/users', method: :post) do %>
-<%= label_tag(:username, "Username:") %><br>
-<%= text_field_tag(:username) %><br><br>
-<%= label_tag(:email, "Email:") %><br>
-<%= email_field_tag(:email) %><br><br>
-<%= label_tag(:password, "Password:") %><br>
-<%= password_field_tag(:password) %><br><br>
-<%= submit_tag "Submit" %>
-<% end %> -->
+<h1> Edit User </h1>
 
 <% if @user.errors.any? %>
 <%= @user.errors.full_messages %>
@@ -29,4 +20,4 @@
 <div class="actions">
   <%= f.submit %>
 </div>
-<% end %> 	
+<% end %>
